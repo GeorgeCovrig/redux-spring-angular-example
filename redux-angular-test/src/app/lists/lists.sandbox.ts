@@ -14,10 +14,6 @@ import { loadProducts } from './action/lists.action';
 export class ListsSandbox {
   public categoryList$ = this.appState$.select(getProductList);
  
-
-
-  private subscriptions: Array<Subscription> = [];
-  /** create a subject send the value from menucomponent and recieve value to productFilterComponent*/
   productFilterData = new Subject<any>();
 
   constructor(

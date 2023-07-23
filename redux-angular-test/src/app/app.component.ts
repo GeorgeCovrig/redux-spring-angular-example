@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ListsSandbox } from './lists/lists.sandbox';
-import { listsRecord } from './lists/reducer/lists.state';
 
 @Component({
   selector: 'app-root',
