@@ -1,0 +1,6 @@
+{
+    "/product/all": {
+    "target": "https://localhost:8888",
+    "secure": true
+    }
+    }

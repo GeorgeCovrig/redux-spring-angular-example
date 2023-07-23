@@ -10,7 +10,6 @@ import { EffectsModule } from '@ngrx/effects';
 import { ListsEffect } from './lists/effects/lists.effect';
 import { metaReducers, reducers } from './reducer.interface';
 import { ListsService } from './lists/lists.service';
-import { ProductService } from './services/products.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,7 @@ import { ProductService } from './services/products.service';
     StoreModule.forRoot(reducers, {metaReducers}),
     EffectsModule.forRoot([ListsEffect]),
   ],
-  providers: [ListsSandbox, ListsService, ProductService],
+  providers: [ListsSandbox, ListsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

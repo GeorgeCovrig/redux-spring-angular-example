@@ -68,7 +68,8 @@
               "browserTarget": "redux-angular-test:build:production"
             },
             "development": {
-              "browserTarget": "redux-angular-test:build:development"
+              "browserTarget": "redux-angular-test:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
