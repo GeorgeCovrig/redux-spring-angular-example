@@ -4,7 +4,7 @@ import { ListsState, listsRecord } from './lists.state';
 
 export const initialState: ListsState = (new listsRecord() as unknown) as ListsState;
 
-const guestReducer = createReducer(
+const productListReducer = createReducer(
   initialState,
 
   on(actions.loadProductsSuccess, (state, action) => {
@@ -16,7 +16,7 @@ const guestReducer = createReducer(
 );
 
  export function reducer(state: ListsState | undefined, action: any) {
-   return guestReducer(state, action); }
+   return productListReducer(state, action); }
 
 export const productList = (state: ListsState) => state.products;
 

@@ -2,7 +2,7 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { Subscription, Subject, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import * as store from '../state.interface';
 import {
   getProductList
@@ -12,10 +12,7 @@ import { loadProducts } from './action/lists.action';
 
 @Injectable()
 export class ListsSandbox {
-  public categoryList$ = this.appState$.select(getProductList);
  
-  productFilterData = new Subject<any>();
-
   constructor(
     private router: Router,
     protected appState$: Store<store.AppState>
